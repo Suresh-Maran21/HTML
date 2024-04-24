@@ -1,0 +1,67 @@
+<html>
+    <title>
+        Comment Forms
+    </title>
+    <body>
+        <h1>Comment Form</h1>
+        <form method="GET" enctype="multipart/form-data" >
+            <p>
+                <label for="UserName">Name : </label><br>
+                <input type="text" name="UserName" placeholder="Enter your name" size="15" maxlength="25">
+            </p>
+            <p>
+                <label for="Email">Email : </label><br>
+                <input type="text" name="Email" placeholder="Enter your Email" size="15" maxlength="25">
+            </p>
+            <p>
+                <label > Select a Language : </label><br>
+                <input type="radio" name="learning_type" id="html" value="html" checked="checked"><label for="html"> HTML</label>
+                <input type="radio" name="learning_type" id="java" value="java" ><label for="java"> JAVA </label>
+                <input type="radio" name="learning_type" id="css" value="css" ><label for="css"> CSS </label>
+            </p>
+            <p>
+                My hobbies are <br>
+                <input type="checkbox" name="hobbies[]" value="singing">Singing
+                <input type="checkbox" name="hobbies[]" value="cricket">Cicket
+                <input type="checkbox" name="hobbies[]" value="pubg">Pubg
+            </p>
+            <p>
+                Select your Date of Birth: <br>
+                <select name="dob" id="dob">
+                    <option value="Select" selected>select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </p>
+            <p>
+                Select Your Sports : <br>
+                <select name="sport_choice" multiple size="6" >
+                    <option value="cicket">cricket</option>
+                    <option value="volleyball">volleyball</option>
+                    <option value="football">football</option>
+                    <option value="chess">chess</option>
+                    <option value="pubg">pubg</option>
+                </select>
+            </p>
+            <p>
+                Your Resume : <br>
+                <input type="file" name="resume">
+            </p>
+            <p>
+                comments : <br> 
+                <textarea name="comments" cols="35" rows="5" placeholder="Enter your comments"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Send Message" name="contact Form">
+            </p>
+        </form>
+    </body>
+</html>
